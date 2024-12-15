@@ -1,0 +1,104 @@
+.row .col-md-6, .row .col-lg-4 {
+    transition: width 0.3s ease;
+}
+
+main {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.card {
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100% !important;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar-brand i {
+    color: #007bff; 
+}
+
+.nav-link , .active {
+    color: white;
+    position: relative;
+    width: 100%;
+    padding: 5px 25px;
+    transition: color 0.3s ease-in-out;
+}
+ul{
+    justify-content: space-between;
+    padding: 5px 25px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+.nav-link:hover , .active {
+    color: #007bff;
+    border: 2px solid #007bff; 
+    border-radius: 30px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+
+.nav-link.active {
+    color: #007bff; 
+}
+
+.find{
+    position: absolute;
+    bottom: 0.2px;
+}
+
+.form-control, .form-control:focus{
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 0.5;
+    background-color: #1E202B;
+    border: 2px solid #1E202B;
+    color: white;
+}
+.form-control::placeholder{
+    color: #f8f8f8;
+}
